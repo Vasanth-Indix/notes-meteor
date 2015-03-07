@@ -1,0 +1,21 @@
+<head>
+  <title>Notes</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Notes</h1>
+    </header>
+
+    <ul>
+      {{#each notes}}
+        {{> note}}
+      {{/each}}
+    </ul>
+  </div>
+</body>
+
+<template name="note">
+  <li>{{text}}</li>
+</template>
